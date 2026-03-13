@@ -20,8 +20,8 @@ b)	If the condition is false, print "false" using the 'print' method of 'System.
  ```
 /*
 Program to implement a variable and operators using Java
-Developed by: Yedlapalli Charan Teja
-RegisterNumber: 212223040247
+Developed by: Abinav Aaditya
+RegisterNumber: 212224040008
 */
 ```
 
@@ -61,6 +61,7 @@ Input    Expected   Got
 
 ## RESULT:
 Thus, the Java program to get values of variables 'a' and 'b' and then check if both the conditions 'a < 50' and 'a < b' are true is created successfully.
+
 
 
 
