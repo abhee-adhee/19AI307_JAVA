@@ -41,19 +41,12 @@ public class Main {
 	}
 }
 ```
-
-
-
-
-
-
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/4182d974-4794-4220-94a1-2db096882f0b)
+<img width="883" height="291" alt="Screenshot 2025-10-09 205825" src="https://github.com/user-attachments/assets/9ef1f684-aac9-4e29-a3f0-d80e72e32f99" />
 
 
 ## RESULT:
 Thus the java Program to read input and print length of the string in java was executed successfully.
-
 
 
