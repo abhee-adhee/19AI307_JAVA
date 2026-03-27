@@ -1,48 +1,39 @@
-# Ex.No:4(E)  PARAMETERIZED CONSTRUCTOR
+# Ex.No:5(A)  DATA HIDING AND ENCAPSULATION
 ## AIM:
-To write a parameterized constructor in the Laptop class given below that initializes the brand , price class field with the string "Apple" and 42500.75.
-
-Call the getBrand() method in the main method of the Sample class  and store the value of the brand in a variable, and print the value.
-
-Call the getPrice() method in the main method of the Sample class  and store the value of the price in a variable, and print the value.
+To Create a java program to display the age of the person.Use access modifier private to achieve the data hiding concepts.
 
 ## ALGORITHM :
-
 1. Start
 
-2. Define class Laptop:
+2.  Import the Scanner class for input.
 
-    Declare a String variable brand.
-    
-    Declare a double variable price.
-    
-    Create a constructor Laptop():
-    
-    Set brand to "Apple".
-    
-    Set price to 42500.75.
+3. Define class Person:
 
-3. Define a method getBrand():
+   Declare a private int variable age.
+   
+   Create a method setAge(int age):
+   
+   Assign the input parameter age to the instance variable age.
+   
+   Create a method getAge():
+   
+   Return the value of age.
 
-    Return the value of brand.
-    
-    Define a method getPrice():
-    
-    Return the value of price.
+4. Define class Main:
 
-4. Define class Sample:
-
-    In the main method:
-    
-        Create an object myLaptop of class Laptop.
-        
-        Call getBrand() method using myLaptop and store the result in laptopBrand.
-        
-        Print laptopBrand.
-        
-        Call getPrice() method using myLaptop and store the result in laptopPrice.
-        
-        Print laptopPrice.
+   In the main method:
+   
+   Create a Scanner object scanner to read user input.
+   
+   Create an object p of class Person.
+   
+   Read an integer from the user and store it in inputAge.
+   
+   Call p.setAge(inputAge) to set the age in the Person object.
+   
+   Print "My age is " followed by the value returned by p.getAge().
+   
+   Close the scanner.
 
 5. End
 
@@ -50,7 +41,7 @@ Call the getPrice() method in the main method of the Sample class  and store the
 ## PROGRAM:
  ```
 /*
-Program to implement a Parameterized Constructor Using Java
+Program to implement a Data Hiding & Encapsulation using Java
 Developed by: ABINAV AADITYA
 RegisterNumber: 212224040008 
 */
@@ -58,41 +49,40 @@ RegisterNumber: 212224040008
 
 ## Sourcecode.java:
 
-```
-class Laptop {
-    String brand;
-    double price;
-    public Laptop() {
-        this.brand = "Apple";
-        this.price = 42500.75;
+```java
+import java.util.Scanner;
+
+class Person {
+    private int age;
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public String getBrand() {
-        return brand;
-    }
-
-    public double getPrice() {
-        return price;
+    public int getAge() {
+        return age;
     }
 }
-public class Sample {
+
+public class Main {
     public static void main(String[] args) {
-        Laptop myLaptop = new Laptop();
-        String laptopBrand = myLaptop.getBrand();
-        System.out.println(laptopBrand);
-        double laptopPrice = myLaptop.getPrice();
-        System.out.println(laptopPrice);
+        Scanner scanner = new Scanner(System.in);
+        Person p = new Person();
+
+        int inputAge = scanner.nextInt();
+        p.setAge(inputAge);
+
+        System.out.println("My age is " + p.getAge());
+        scanner.close();
     }
 }
 ```
+
 ## OUTPUT:
 
-![image](https://github.com/user-attachments/assets/dd258499-d8e9-427a-97a0-9157d4055a30)
+![image](https://github.com/user-attachments/assets/781fdc29-385a-4a25-bdb3-72d4c304f256)
 
 
 ## RESULT:
-Thus, the  java program was successfully parameterized constructor in the Laptop class given below that initializes the brand , price class field with the string "Apple" and 42500.75.
-
- 
-
+Thus , the  java program to display the age of the person.Use access modifier private to achieve the data hiding concepts.
 
