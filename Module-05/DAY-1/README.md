@@ -1,32 +1,47 @@
-# Ex.No:5(B) TIGHTLY ENCAPSULATED CLASS
-
+# Ex.No:5(A)  DATA HIDING AND ENCAPSULATION
 ## AIM:
-To Create a java program to display the reverse string and  use tightly encapsulated class.
+To Create a java program to display the age of the person.Use access modifier private to achieve the data hiding concepts.
+
 ## ALGORITHM :
+1. Start
 
-1. Start the program and import Scanner for user input.
+2.  Import the Scanner class for input.
 
-2. Create a StringReverser class with:
+3. Define class Person:
 
-   A private String variable text.
+   Declare a private int variable age.
    
-   A method setText to store user input.
-
-   A method getReversedText that uses StringBuilder to reverse and return the text.
-
-3. In the Main class, create:
-
-   A Scanner object to read user input.
+   Create a method setAge(int age):
    
-   A StringReverser object to process the input.
+   Assign the input parameter age to the instance variable age.
+   
+   Create a method getAge():
+   
+   Return the value of age.
 
-4. Read a string input from the user, set it using setText, and print the reversed text using getReversedText.
+4. Define class Main:
 
-5. Close the Scanner and end the program.
+   In the main method:
+   
+   Create a Scanner object scanner to read user input.
+   
+   Create an object p of class Person.
+   
+   Read an integer from the user and store it in inputAge.
+   
+   Call p.setAge(inputAge) to set the age in the Person object.
+   
+   Print "My age is " followed by the value returned by p.getAge().
+   
+   Close the scanner.
+
+5. End
+
+
 ## PROGRAM:
  ```
 /*
-Program to implement a tightly encapsulated class using Java
+Program to implement a Data Hiding & Encapsulation using Java
 Developed by: ABINAV AADITYA
 RegisterNumber: 212224040008 
 */
@@ -34,53 +49,40 @@ RegisterNumber: 212224040008
 
 ## Sourcecode.java:
 
-
 ```java
 import java.util.Scanner;
 
-class StringReverser {
-    private String text;
+class Person {
+    private int age;
 
-    public void setText(String text) {
-        this.text = text;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public String getReversedText() {
-        StringBuilder sb = new StringBuilder(text);
-        return sb.reverse().toString();
+    public int getAge() {
+        return age;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        StringReverser sr = new StringReverser();
+        Person p = new Person();
 
-        String input = scanner.nextLine();
-        sr.setText(input);
+        int inputAge = scanner.nextInt();
+        p.setAge(inputAge);
 
-        System.out.println(sr.getReversedText());
+        System.out.println("My age is " + p.getAge());
         scanner.close();
     }
 }
 ```
 
-
-
-
 ## OUTPUT:
 
-```
-Input     Expected    Got
+![image](https://github.com/user-attachments/assets/781fdc29-385a-4a25-bdb3-72d4c304f256)
 
-pot       top         top
-
-lap       pal         pal
-
-```
 
 ## RESULT:
-Thus a java program to display the reverse string and  use tightly encapsulated classwas executed successfully.
-
-
+Thus , the  java program to display the age of the person.Use access modifier private to achieve the data hiding concepts.
 
