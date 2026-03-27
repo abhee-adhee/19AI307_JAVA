@@ -1,47 +1,98 @@
-# Ex.No:5(A)  DATA HIDING AND ENCAPSULATION
+# Ex.No:4(E)  PARAMETERIZED CONSTRUCTOR
 ## AIM:
-To Create a java program to display name and location of the employee and use the encapsulation concepts
+To write a parameterized constructor in the Laptop class given below that initializes the brand , price class field with the string "Apple" and 42500.75.
+
+Call the getBrand() method in the main method of the Sample class  and store the value of the brand in a variable, and print the value.
+
+Call the getPrice() method in the main method of the Sample class  and store the value of the price in a variable, and print the value.
 
 ## ALGORITHM :
-1.  Start the program
-2.	Define class `Employee`:
--	a) Declare two private `String` variables: `name1` and `name2`
--	b) Define `setname(String n1)` method to set `name1` to `n1`
--	c) Define `setname2(String n2)` method to set `name2` to `n2`
--	d) Define `get1()` method to return `name1`
--	e) Define `get2()` method to return `name2`
-3.	Define `Main` class with `main` method:
--	a) Create `Scanner` object `sc` for input
--	b) Read `name1` and `name2` from user input
--	c) Create ` Employee ` object `hl`
--	d) Use `hl.setname(name1)` and `hl.setname2(name2)` to set the names
--	e) Print the values of `hl.get1()` and `hl.get2()`
-4.	End
 
+1. Start
 
+2. Define class Laptop:
 
+    Declare a String variable brand.
+    
+    Declare a double variable price.
+    
+    Create a constructor Laptop():
+    
+    Set brand to "Apple".
+    
+    Set price to 42500.75.
+
+3. Define a method getBrand():
+
+    Return the value of brand.
+    
+    Define a method getPrice():
+    
+    Return the value of price.
+
+4. Define class Sample:
+
+    In the main method:
+    
+        Create an object myLaptop of class Laptop.
+        
+        Call getBrand() method using myLaptop and store the result in laptopBrand.
+        
+        Print laptopBrand.
+        
+        Call getPrice() method using myLaptop and store the result in laptopPrice.
+        
+        Print laptopPrice.
+
+5. End
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a Data Hiding & Encapsulation using Java
-Developed by: 
-RegisterNumber:  
+Program to implement a Parameterized Constructor Using Java
+Developed by: ABINAV AADITYA 
+RegisterNumber: 212224040008
 */
 ```
 
 ## Sourcecode.java:
 
+```
+class Laptop {
+    String brand;
+    double price;
+    public Laptop() {
+        this.brand = "Apple";
+        this.price = 42500.75;
+    }
 
+    public String getBrand() {
+        return brand;
+    }
 
-
-
-
-
+    public double getPrice() {
+        return price;
+    }
+}
+public class Sample {
+    public static void main(String[] args) {
+        Laptop myLaptop = new Laptop();
+        String laptopBrand = myLaptop.getBrand();
+        System.out.println(laptopBrand);
+        double laptopPrice = myLaptop.getPrice();
+        System.out.println(laptopPrice);
+    }
+}
+```
 ## OUTPUT:
 
+![image](https://github.com/user-attachments/assets/dd258499-d8e9-427a-97a0-9157d4055a30)
 
 
 ## RESULT:
-Thus , the  java program to display name and location of the employee and use the encapsulation concepts executed successfully.
+Thus, the  java program was successfully parameterized constructor in the Laptop class given below that initializes the brand , price class field with the string "Apple" and 42500.75.
+
+ 
+
+
